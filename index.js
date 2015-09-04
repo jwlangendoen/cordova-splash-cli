@@ -18,7 +18,7 @@ var getPlatforms = function (projectName) {
         name : 'ios',
         // TODO: use async fs.exists
         isAdded : fs.existsSync('platforms/ios'),
-        splashPath : 'www/res/splash/ios/',
+        splashPath : 'www/res/screen/ios/',
         splash : [
             { name : 'Default-568h@2x~iphone.png',    width : 640,  height : 1136 },
             { name : 'Default-667h.png',              width : 750,  height : 1334 },
