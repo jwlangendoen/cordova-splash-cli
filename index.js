@@ -18,7 +18,7 @@ var getPlatforms = function (projectName) {
         name : 'ios',
         // TODO: use async fs.exists
         isAdded : fs.existsSync('platforms/ios'),
-        splashPath : 'platforms/ios/' + projectName + '/Resources/splash/',
+        splashPath : 'www/res/splash/ios/',
         splash : [
             { name : 'Default-568h@2x~iphone.png',    width : 640,  height : 1136 },
             { name : 'Default-667h.png',              width : 750,  height : 1334 },
@@ -32,10 +32,11 @@ var getPlatforms = function (projectName) {
             { name : 'Default~iphone.png',            width : 320,  height : 480 },
         ]
     });
+/*
     platforms.push({
         name : 'android',
         isAdded : fs.existsSync('platforms/android'),
-        splashPath : 'platforms/android/res/',
+        splashPath : 'www/res/splash/android/',
         splash : [
             { name : 'drawable-land-ldpi/screen.png',  width : 320, height: 200 },
             { name : 'drawable-land-mdpi/screen.png',  width : 480, height: 320 },
@@ -47,6 +48,7 @@ var getPlatforms = function (projectName) {
             { name : 'drawable-port-xhdpi/screen.png', width : 720, height: 1280 },
         ]
     });
+*/
     // TODO: add all platforms
     deferred.resolve(platforms);
     return deferred.promise;
